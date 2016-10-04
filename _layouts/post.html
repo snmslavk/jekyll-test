@@ -1,6 +1,6 @@
 ---
 layout: default
-comments: false
+comments: true
 ---
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
@@ -12,9 +12,12 @@ comments: false
   <div class="post-content" itemprop="articleBody">
     {{ content }}
   </div>
+
+</article>
+
 {% if page.comments %}
   <p>privet</p>
-{% endif %}
+
  <div id="disqus_thread"></div>
 <script>
 
@@ -31,5 +34,4 @@ var disqus_config = function () {
 })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-</article>
+{% endif %}
