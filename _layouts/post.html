@@ -12,8 +12,9 @@ comments: true
   <div class="post-content" itemprop="articleBody">
     {{ content }}
   </div>
-
+{% if page.comments %}
   <p>privet</p>
+{% endif %}
  <div id="disqus_thread"></div>
 <script>
 
